@@ -1,3 +1,5 @@
+import waterQuality from '../assets/images/water_quality_equipment_nature_1792270209685.jpg';
+
 import React from 'react';
 import { cvData } from '../data/cvData';
 import { ShieldCheck, Compass, FileCheck2, Users, ArrowUpRight, Info } from 'lucide-react';
@@ -61,7 +63,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="relative rounded-2xl overflow-hidden glass-panel border border-sky-900/40 p-2 shadow-2xl group h-full flex flex-col">
               <div className="relative flex-1 min-h-[300px] rounded-xl overflow-hidden bg-slate-900">
                 <img
-                  src="/src/assets/images/water_quality_equipment_nature_1792270209685.jpg"
+                  src="waterQuality"
                   alt="Monitoreo Ambiental y Trabajo de Campo"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
