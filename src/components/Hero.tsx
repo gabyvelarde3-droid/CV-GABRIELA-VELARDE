@@ -1,3 +1,10 @@
+import heroBackdrop from '../assets/images/hero_ocean_navy_backdrop_1792264988571.jpg';
+import credentialPortrait from '../assets/images/gabriela_official_credential_id_1792269223403.jpg';
+import projectMining from '../assets/images/project_mining_ssoma_1792265006228.jpg';
+import waterQuality from '../assets/images/water_quality_equipment_nature_1792270209685.jpg';
+import projectSig from '../assets/images/project_sig_cartography_1792265005452.jpg';
+import planefaAudit from '../assets/images/planefa_environmental_audit_desk_1792270256021.jpg';
+
 import React, { useState, useEffect } from 'react';
 import { cvData } from '../data/cvData';
 import { ChevronLeft, ChevronRight, FileDown, ArrowDown, ShieldCheck, MapPin, Mail, Phone, ExternalLink, Info, Camera } from 'lucide-react';
@@ -7,35 +14,35 @@ interface HeroProps {
   onOpenContactModal: () => void;
 }
 
-const DEFAULT_CREDENTIAL_PORTRAIT = "/src/assets/images/gabriela_official_credential_id_1792269223403.jpg";
+const DEFAULT_CREDENTIAL_PORTRAIT = credentialPortrait;
 
 const HIGHLIGHT_SLIDES = [
   {
     num: "01.",
     title: "Operaciones Mineras & SSOMA",
     description: "Auxiliar SIG y Seguridad en Minera Bateas (Caylloma). Controles operacionales, auditorías ISO 45001 y matriz IPERC en faena.",
-    image: "/src/assets/images/project_mining_ssoma_1792265006228.jpg",
+    image: "projectMining",
     tag: "Minería & SSOMA"
   },
   {
     num: "02.",
     title: "Gobierno Regional & Riesgos",
     description: "Gestión de riesgos operacionales y planes de contingencia para el GORE Arequipa e investigación técnica de accidentes.",
-    image: "/src/assets/images/water_quality_equipment_nature_1792270209685.jpg",
+    image: "waterQuality",
     tag: "Sector Público"
   },
   {
     num: "03.",
     title: "Cartografía SIG & Cuencas",
     description: "Especialista en Evaluación de Impacto Ambiental y SIG (OMC). Zonificación territorial, ArcGIS, QGIS y AutoCAD.",
-    image: "/src/assets/images/project_sig_cartography_1792265005452.jpg",
+    image: "projectSig",
     tag: "SIG & Territorio"
   },
   {
     num: "04.",
     title: "Supervisión & PLANEFA",
     description: "Auditorías de cumplimiento ambiental municipal, planes anuales de fiscalización y seguimiento de compromisos normativos.",
-    image: "/src/assets/images/planefa_environmental_audit_desk_1792270256021.jpg",
+    image: "planefaAudit",
     tag: "Fiscalización"
   }
 ];
@@ -77,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Cinematic Caustics & Texture */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
-          src="/src/assets/images/hero_ocean_navy_backdrop_1792264988571.jpg"
+          src="heroBackdrop"
           alt="Oceanic Navy Backdrop"
           className="w-full h-full object-cover object-center opacity-30 mix-blend-screen scale-105 transition-transform duration-1000 ease-out"
         />
