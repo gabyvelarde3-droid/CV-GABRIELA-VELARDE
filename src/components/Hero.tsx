@@ -21,28 +21,28 @@ const HIGHLIGHT_SLIDES = [
     num: "01.",
     title: "Operaciones Mineras & SSOMA",
     description: "Auxiliar SIG y Seguridad en Minera Bateas (Caylloma). Controles operacionales, auditorías ISO 45001 y matriz IPERC en faena.",
-    image: "projectMining",
+    image: projectMining,
     tag: "Minería & SSOMA"
   },
   {
     num: "02.",
     title: "Gobierno Regional & Riesgos",
     description: "Gestión de riesgos operacionales y planes de contingencia para el GORE Arequipa e investigación técnica de accidentes.",
-    image: "waterQuality",
+    image: waterQuality,
     tag: "Sector Público"
   },
   {
     num: "03.",
     title: "Cartografía SIG & Cuencas",
     description: "Especialista en Evaluación de Impacto Ambiental y SIG (OMC). Zonificación territorial, ArcGIS, QGIS y AutoCAD.",
-    image: "projectSig",
+    image: projectSig,
     tag: "SIG & Territorio"
   },
   {
     num: "04.",
     title: "Supervisión & PLANEFA",
     description: "Auditorías de cumplimiento ambiental municipal, planes anuales de fiscalización y seguimiento de compromisos normativos.",
-    image: "planefaAudit",
+    image: planefaAudit,
     tag: "Fiscalización"
   }
 ];
@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Cinematic Caustics & Texture */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
-          src="heroBackdrop"
+          src={heroBackdrop}
           alt="Oceanic Navy Backdrop"
           className="w-full h-full object-cover object-center opacity-30 mix-blend-screen scale-105 transition-transform duration-1000 ease-out"
         />
