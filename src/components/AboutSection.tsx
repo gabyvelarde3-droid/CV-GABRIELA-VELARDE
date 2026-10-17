@@ -63,7 +63,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="relative rounded-2xl overflow-hidden glass-panel border border-sky-900/40 p-2 shadow-2xl group h-full flex flex-col">
               <div className="relative flex-1 min-h-[300px] rounded-xl overflow-hidden bg-slate-900">
                 <img
-                  src="waterQuality"
+                  src={waterQuality}
                   alt="Monitoreo Ambiental y Trabajo de Campo"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
